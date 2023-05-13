@@ -44,66 +44,117 @@ version: "3.1"
 
 stories:
 
-- story: happy path
-  steps:
-  - intent: greet
-  - action: utter_greet
-  - intent: mood_great
-  - action: utter_happy
+# - story: happy path
+#   steps:
+#   - intent: greet
+#   - action: utter_greet
+#   - intent: mood_great
+#   - action: utter_happy
+# 
+# - story: sad path 1
+#   steps:
+#   - intent: greet
+#   - action: utter_greet
+#   - intent: mood_unhappy
+#   - action: utter_cheer_up
+#   - action: utter_did_that_help
+#   - intent: affirm
+#   - action: utter_happy
+# 
+# - story: sad path 2
+#   steps:
+#   - intent: greet
+#   - action: utter_greet
+#   - intent: mood_unhappy
+#   - action: utter_cheer_up
+#   - action: utter_did_that_help
+#   - intent: deny
+#   - action: utter_goodbye
+# 
+# - story: interactive_story_1
+#   steps:
+#   - intent: greet
+#   - action: utter_greet
+#   - intent: status
+#   - action: utter_status
+# 
+# - story: interactive_story_1
+#   steps:
+#   - intent: greet
+#   - action: utter_greet
+#   - intent: anime
+#   - action: utter_anime
+# 
+# - story: interactive_story_1
+#   steps:
+#   - intent: greet
+#   - action: utter_greet
+#   - intent: anime
+#   - action: utter_anime
+#   - intent: status
+#   - action: utter_status
+#   - intent: goodbye
+#   - action: utter_goodbye
+#   - action: action_restart
+# 
+# - story: interactive_story_2
+#   steps:
+#   - intent: cando
+#   - action: utter_cando
+#   - action: action_restart
 
-- story: sad path 1
-  steps:
-  - intent: greet
-  - action: utter_greet
-  - intent: mood_unhappy
-  - action: utter_cheer_up
-  - action: utter_did_that_help
-  - intent: affirm
-  - action: utter_happy
 
-- story: sad path 2
-  steps:
-  - intent: greet
-  - action: utter_greet
-  - intent: mood_unhappy
-  - action: utter_cheer_up
-  - action: utter_did_that_help
-  - intent: deny
-  - action: utter_goodbye
-
-- story: interactive_story_1
-  steps:
-  - intent: greet
-  - action: utter_greet
-  - intent: status
-  - action: utter_status
-
-- story: interactive_story_1
-  steps:
-  - intent: greet
-  - action: utter_greet
-  - intent: anime
-  - action: utter_anime
-
-- story: interactive_story_1
-  steps:
-  - intent: greet
-  - action: utter_greet
-  - intent: anime
-  - action: utter_anime
-  - intent: status
-  - action: utter_status
-  - intent: goodbye
-  - action: utter_goodbye
-  - action: action_restart
-
-- story: interactive_story_2
-  steps:
-  - intent: cando
-  - action: utter_cando
-  - action: action_restart
-
-- story: clubsss
+# Student clubs
+- story: clubs
   steps:
   - intent: intent_club
   - action: utter_club
+
+# Creative Code;
+- story: creative_code
+  steps:
+  - intent: intent_creative_code
+  - action: utter_creative_code
+
+# Events
+- story: comming_events
+  steps:
+  - intent: intent_events
+  - action: utter_events
+
+# Student Council
+- story: student_council
+  steps:
+  - intent: intent_student_council
+  - action: utter_student_council
+
+
+# Start of the new year
+- story: student_start_year
+  steps:
+  - intent: intent_start_year
+  - action: utter_start_year
+
+# Scholarship
+- story: student_scolarship
+  steps:
+  - intent: intent_scolarship
+  - action: utter_scolarship
+
+# Library
+- story: student_library
+  steps:
+  - intent: intent_library
+  - action: utter_library
+
+# Front office
+- story: student_front_office
+  steps:
+  - intent: intent_front_office
+  - action: utter_front_office
+
+# Canteen
+- story: student_canteen
+  steps:
+  - intent: intent_canteen
+  - action: utter_canteen

@@ -1,104 +1,137 @@
 version: "3.1"
 
 intents:
-- status
-- cando
-- anime
-- greet
-- goodbye
-- philosofy
-- love
-- humor
-- affirm
-- deny
-- mood_great
-- mood_unhappy
-- bot_challenge
-- motivation
+# - status
+# - cando
+# - anime
+# - greet
+# - goodbye
+# - philosofy
+# - love
+# - humor
+# - affirm
+# - deny
+# - mood_great
+# - mood_unhappy
+# - bot_challenge
+# - motivation
 - intent_club
+- intent_creative_code
+- intent_events
+- intent_student_council
+- intent_start_year
+- intent_scolarship
+- intent_library
+- intent_front_office
+- intent_canteen
 responses:
-  utter_greet:
-  - text: Здравствуй человек!
-  - text: Привет
-  - text: И вам не хварать!
-  - text: Категорически вас приветствую
-  - text: Привет!
-  - text: Бомжур
-  - text: Привет, юзер!
-  - text: Привет, человек
-  - text: Хорошего времени суток!
-  - text: Привет!)
-  - text: Здравствуй кожаный мешок
-  - text: Добрый день
-  - text: Здравствуй!
-  - text: Приветствую тебя!
-  - text: Хау
-  - text: Добро пожаловать
-  - text: Здравствуй
-  utter_cheer_up:
-  - text: 'Это поднимет тебе настроение:'
-    image: https://i.imgur.com/nGF1K8f.jpg
-  utter_did_that_help:
-  - text: Чем могу помочь тебе
-  utter_happy:
-  - text: Замечательно!
-  utter_goodbye:
-  - text: Прощай
-  - text: Пока!
-  - text: До встречи
-  - text: Ты заходи если что
-  - text: Всего доброго
-  - text: Всего доброго
-  - text: До встречи!
-  - text: Если что, я тут :)
-  - text: До встречи
-  - text: Обращайтесь :)
-  - text: Если что, обращайтесь :)
-  utter_iamabot:
-  - text: Я бот, создатель идиот
-  utter_status:
-  - text: Конечно я здесь :)
-  - text: Я всегда тут
-  utter_cando:
-  - text: пока я умею рандомно отвечать на ваши вопросы
-  - text: могу распознать ваши вопросы возможно)
-  utter_humor:
-  - text: шутка- люблю смотреть ужасы из-за дивана, так соседи не знаю, что я в их комнате
-  - text: анекдот-  однажды пират, лежа в больнице, по привычке захватил чужое судно!
-  - text: шутка- несчастый случай произошел на фестивале пива - в гараж наведалась жена...
-  - text: анекдот- в челябинске полицейские арестовали дуб. по их словам, у него был ствол
-  - text: шутка- решил однажды царь разделить наследство среди трех своих сыновей. офигеть! сказал четвертый сын
-  - text: анекдот- так, девочка! не качайся на дедушке! не для того повесили
-  utter_motivation:
-  - text: мой хозяин более ленивый чем ты)
-  - text: главное начни
-  - text: но меня же кто-то написал
-  utter_philosofy:
-  - text: если долго буду об этом думать, то процессор сгорит!
-  - text: вот и у меня такой вопрос :)
-  utter_love:
-  - text: значит вкус у нас одинаковый
-  - text: вряд ли -_-
-  utter_anime:
-  - text: Кучу аниме на сайте https://yummyanime.club/
-  - text: Новые аниме тут https://yummyanime.club/ongoing
-  - text: Ой зря зря зря ....
+#  utter_greet:
+#  - text: Здравствуй человек!
+#  - text: Привет
+#  - text: И вам не хварать!
+#  - text: Категорически вас приветствую
+#  - text: Привет!
+#  - text: Бомжур
+#  - text: Привет, юзер!
+#  - text: Привет, человек
+#  - text: Хорошего времени суток!
+#  - text: Привет!)
+#  - text: Здравствуй кожаный мешок
+#  - text: Добрый день
+#  - text: Здравствуй!
+#  - text: Приветствую тебя!
+#  - text: Хау
+#  - text: Добро пожаловать
+#  - text: Здравствуй
+#  utter_cheer_up:
+#  - text: 'Это поднимет тебе настроение:'
+#    image: https://i.imgur.com/nGF1K8f.jpg
+#  utter_did_that_help:
+#  - text: Чем могу помочь тебе
+#  utter_happy:
+#  - text: Замечательно!
+#  utter_goodbye:
+#  - text: Прощай
+#  - text: Пока!
+#  - text: До встречи
+#  - text: Ты заходи если что
+#  - text: Всего доброго
+#  - text: Всего доброго
+#  - text: До встречи!
+#  - text: Если что, я тут :)
+#  - text: До встречи
+#  - text: Обращайтесь :)
+#  - text: Если что, обращайтесь :)
+#  utter_iamabot:
+#  - text: Я бот, создатель идиот
+#  utter_status:
+#  - text: Конечно я здесь :)
+#  - text: Я всегда тут
+#  utter_cando:
+#  - text: пока я умею рандомно отвечать на ваши вопросы
+#  - text: могу распознать ваши вопросы возможно)
+#  utter_humor:
+#  - text: шутка- люблю смотреть ужасы из-за дивана, так соседи не знаю, что я в их комнате
+#  - text: анекдот-  однажды пират, лежа в больнице, по привычке захватил чужое судно!
+#  - text: шутка- несчастый случай произошел на фестивале пива - в гараж наведалась жена...
+#  - text: анекдот- в челябинске полицейские арестовали дуб. по их словам, у него был ствол
+#  - text: шутка- решил однажды царь разделить наследство среди трех своих сыновей. офигеть! сказал четвертый сын
+#  - text: анекдот- так, девочка! не качайся на дедушке! не для того повесили
+#  utter_motivation:
+#  - text: мой хозяин более ленивый чем ты)
+#  - text: главное начни
+#  - text: но меня же кто-то написал
+#  utter_philosofy:
+#  - text: если долго буду об этом думать, то процессор сгорит!
+#  - text: вот и у меня такой вопрос :)
+#  utter_love:
+#  - text: значит вкус у нас одинаковый
+#  - text: вряд ли -_-
+#  utter_anime:
+#  - text: Кучу аниме на сайте https://yummyanime.club/
+#  - text: Новые аниме тут https://yummyanime.club/ongoing
+#  - text: Ой зря зря зря ....
+
   utter_club:
-  - text: Много се радвам, че искам да разбереш за клубовете в университета ето едни от тях \:\# \n - Creative Code; \n - ТУ on AIR;
-  - text: Направо се запиши в Creative Code;
+  - text: Много се радвам, че искам да разбереш за клубовете в университета ето едни от тях :<br> - Creative Code; - Кафе, наука и още нещо <br> - Възобновяеми енергийни източници <br> - Роботика и Мехатроника <br> - Студентски Авто Клуб  <br> - Студентски Морски Клуб  <br> - Моторспорт  <br> - Еко:логично  <br> - Олимпийски Студентски Клуб  <br> - TУ-Play  <br> - ТУ On Air  <br> - Дизайн  <br> - IT++  
+  utter_creative_code:
+  - text: Студентски клуб „Creative Code;“ е студентска организация в Технически Университет – Варна. Идеята за създаването на клуба е да подпомогне личностното, професионалното и кариерното развитие на студентите и докторантите, които имат интереси в сферите на информационните технологии, програмирането, изкуствения интелект и Internet Of Things(IoT). 
+  utter_events:
+  - text: В момента се провеждат няколко събития:<br> - DXC Coding Marathon <br> Поредица workshops от Creative Code; <br> Скоро очаквай още събития :) 
+  utter_student_council:
+  - text: Студентски съвет се намира в Машинно-технологичният факултет (МТФ). Може да се свържеш с тях на sc@tu-varna.bg или отиди в офиса им.
+  utter_start_year:
+  - text: Ще бъде вълнуващо! Очакваме те на 15.09.2023г. за да открием заедно новата учебна година. <br> Очакваме те <3 !
+  utter_scolarship:
+  - text: 20.04.2023г. е крайния срок за подаване на стипендии. Отиди в 305МФ и можеш да подадеш свойте документи за стипендия, но твоят среден успех от предходните два семестъра трябва да е над 5.00.
+  utter_library:
+  - text: Библиотеката се намира в НУК. Там можеш да седнеш и да се отдадеш на приятни занимания. Приятно четене!
+  utter_front_office:
+  - text: Отиди в НУК и ще ти помогнат. Там можеш да провериш оценките си в главна книга, да си вземеш декларация, че си студент за БДЖ.  
+  utter_canteen:
+  - text: Стола отваря в 11ч. и работи до 17ч. Столът се намира до залата за тенис на маса, точно до Plaza Night. <br> Също така може да хапнеш и да пийнеш кафе в кафеТУ.
+
 actions:
-- utter_anime
-- utter_cando
-- utter_cheer_up
-- utter_did_that_help
-- utter_goodbye
-- utter_greet
-- utter_humor
-- utter_iamabot
-- utter_love
-- utter_philosofy
-- utter_status
+# - utter_anime
+# - utter_cando
+# - utter_cheer_up
+# - utter_did_that_help
+# - utter_goodbye
+# - utter_greet
+# - utter_humor
+# - utter_iamabot
+# - utter_love
+# - utter_philosofy
+# - utter_status
 - utter_club
+- utter_creative_code
+- utter_events
+- utter_student_council
+- utter_start_year
+- utter_scolarship
+- utter_library
+- utter_front_office
+- utter_canteen
 
 # intents:
 #   - greet

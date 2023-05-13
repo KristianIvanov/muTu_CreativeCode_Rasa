@@ -1,0 +1,1 @@
+{"py/object": "numpy.ndarray", "dtype": "<U22", "values": ["intent_canteen", "intent_club", "intent_creative_code", "intent_events", "intent_front_office", "intent_library", "intent_scolarship", "intent_start_year", "intent_student_council"]}
