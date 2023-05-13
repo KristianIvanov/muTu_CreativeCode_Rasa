@@ -1,0 +1,109 @@
+version: "3.1"
+
+# stories:
+# 
+# - story: happy path
+#   steps:
+#   - intent: greet
+#   - action: utter_greet
+#   - intent: mood_great
+#   - action: utter_happy
+# 
+# - story: sad path 1
+#   steps:
+#   - intent: greet
+#   - action: utter_greet
+#   - intent: mood_unhappy
+#   - action: utter_cheer_up
+#   - action: utter_did_that_help
+#   - intent: affirm
+#   - action: utter_happy
+# 
+# - story: sad path 2
+#   steps:
+#   - intent: greet
+#   - action: utter_greet
+#   - intent: mood_unhappy
+#   - action: utter_cheer_up
+#   - action: utter_did_that_help
+#   - intent: deny
+#   - action: utter_goodbye
+# 
+# - story: hospital
+#   steps:
+#   - intent: greet
+#   - action: utter_greet
+#   - intent: seach_provider
+#   - action: utter_city
+#   - action: utter_goodbye
+# 
+# - story: get clubs in uni
+#   steps:
+#   - intent: info_club
+#   - action: utter_clubs
+
+stories:
+
+- story: happy path
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: mood_great
+  - action: utter_happy
+
+- story: sad path 1
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: mood_unhappy
+  - action: utter_cheer_up
+  - action: utter_did_that_help
+  - intent: affirm
+  - action: utter_happy
+
+- story: sad path 2
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: mood_unhappy
+  - action: utter_cheer_up
+  - action: utter_did_that_help
+  - intent: deny
+  - action: utter_goodbye
+
+- story: interactive_story_1
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: status
+  - action: utter_status
+
+- story: interactive_story_1
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: anime
+  - action: utter_anime
+
+- story: interactive_story_1
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: anime
+  - action: utter_anime
+  - intent: status
+  - action: utter_status
+  - intent: goodbye
+  - action: utter_goodbye
+  - action: action_restart
+
+- story: interactive_story_2
+  steps:
+  - intent: cando
+  - action: utter_cando
+  - action: action_restart
+
+- story: clubsss
+  steps:
+  - intent: intent_club
+  - action: utter_club
